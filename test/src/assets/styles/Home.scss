@@ -1,0 +1,54 @@
+body {
+  // background: rebeccapurple;
+  background: linear-gradient(to right, #52c234, #061700);
+  width: 100%;
+  height: 100vh;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+.e-marker {
+  cursor: pointer;
+
+  &__marker {
+    fill: #fff;
+  }
+
+  &__icon {
+    fill: #fff;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+  }
+
+  &__image {
+    transform: scale(0);
+    transform-origin: 50% 50%;
+  }
+
+  &__circle {
+    display: none;
+    fill: #ec008c;
+    opacity: 0.5;
+  }
+
+  &__loader {
+    fill: #fff;
+    transform-origin: 50% 50%;
+    transform: scale(0);
+  }
+
+  &__text {
+    font-size: 12px;
+    font-family: brandon-grotesque, verdana, helvetica, sans-serif;
+    text-align: center;
+    // transform: scale(0);
+    color: #fff;
+    fill: #fff;
+    transform-origin: 50% 50%;
+    // Center SVG text
+    alignment-baseline: middle;
+    text-anchor: middle;
+  }
+}
